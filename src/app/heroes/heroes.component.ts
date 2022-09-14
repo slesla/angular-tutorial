@@ -13,11 +13,11 @@ export class HeroesComponent implements OnInit {
 
   heroes: Hero[] = [];
 
-  hero: Hero = {
+  /*  hero: Hero = {
     id: 1,
     name: 'Windstorm',
     dob: Date.now(),
-  };
+  }; */
 
   // The parameter heroService simultaneously defines a private heroService property and identifies it as a HeroService injection site.
   // When Angular creates a HeroesComponent, the Dependency Injection system sets the heroService parameter to the singleton instance of HeroService.
@@ -30,10 +30,10 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
+  /*  onSelect(hero: Hero): void {
     this.selectedHero = hero;
     this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
+  } */
 
   // Observable.subscribe()
   // The previous version assigns an array of heroes to the component's heroes property. The assignment occurs synchronously, as if the server could return heroes instantly or the browser could freeze the UI while it waited for the server's response.
